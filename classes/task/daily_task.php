@@ -15,11 +15,11 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * A scheduled task for CAS user sync.
+ * A daily task class to delete accounts which are inactive for more than 3 years excluding '1970-01-01'.
  *
- * @package    local_greetings
- * @copyright  2015 Vadim Dvorovenko <Vadimon@mail.ru>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 03/06/2024 Mfreak.nl | LdesignMedia.nl - Luuk Verhoeven
+ * @author    Nihaal Shaikh
  */
 
 namespace local_greetings\task;
@@ -29,8 +29,8 @@ use dml_exception;
 /**
  * A daily task class to delete accounts which are inactive for more than 3 years excluding '1970-01-01'.
  *
- * @copyright  2015 Vadim Dvorovenko <Vadimon@mail.ru>
- * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @copyright 03/06/2024 Mfreak.nl | LdesignMedia.nl - Luuk Verhoeven
+ * @author    Nihaal Shaikh
  */
 class daily_task extends \core\task\scheduled_task {
 
